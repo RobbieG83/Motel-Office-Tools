@@ -48,7 +48,7 @@ body, html {
     width: 100%;
     flex-grow: 1;
     justify-content: center;
-    margin-top: 20%; /* Added to lower the menu top by 20% */
+    margin-top: 40%; /* Added to lower the menu top by 20% */
 }
 
 .sidebar button {
