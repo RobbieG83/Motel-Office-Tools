@@ -47,9 +47,9 @@ body, html {
     align-items: center;
     width: 100%;
     flex-grow: 1;
-    justify-content: center;
-    margin-top: 40%; /* Added to lower the menu top by 20% */
-    margin-bottom: 0%;
+    justify-content: flex-end; /* Align items to the bottom */
+    margin-top: auto; /* Push the menu to the bottom */
+    margin-bottom: 20px;
 }
 
 .sidebar button {
