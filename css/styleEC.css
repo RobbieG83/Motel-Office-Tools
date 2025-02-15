@@ -98,16 +98,12 @@ button:hover {
     text-decoration: underline;
 }
 
+.links-container {
+    display: flex;
+    justify-content: space-around;
+    margin: 20px 0;
+}
+
 .positioned-link {
-    position: absolute;
-    left: 50%;
-    transform: translateX(-50%);
-}
-
-.positioned-link:nth-of-type(1) {
-    top: 15%;
-}
-
-.positioned-link:nth-of-type(2) {
-    top: 20%;
+    margin: 0 10px;
 }
