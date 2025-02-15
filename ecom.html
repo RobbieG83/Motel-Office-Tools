@@ -10,16 +10,20 @@
 <body>
     <img src="assets/Motel Logo.png" alt="Logo" class="logo flame-effect">
     
-    <!-- New link added outside the main container -->
-    <p class="positioned-link">
-        <a href="https://4093875.app.netsuite.com/app/common/search/searchresults.nl?searchid=3435&whence=" target="_blank" class="external-link">3PL Id Search (NetSuite)</a>
-    </p>
-    <p class="positioned-link">
-        <a href="https://4093875.app.netsuite.com/app/setup/assistants/nsimport/importassistant.nl?recid=6186&new=T" target="_blank" class="external-link">3PL Import</a>
-    </p>
     
     <div class="container">
         <h1>Item Id's By Zcode</h1>
+
+        <!-- New links container added below the h1 -->
+        <div class="links-container">
+            <p class="positioned-link">
+                <a href="https://4093875.app.netsuite.com/app/common/search/searchresults.nl?searchid=3435&whence=" target="_blank" class="external-link">3PL Id Search (NetSuite)</a>
+            </p>
+            <p class="positioned-link">
+                <a href="https://4093875.app.netsuite.com/app/setup/assistants/nsimport/importassistant.nl?recid=6186&new=T" target="_blank" class="external-link">3PL Import</a>
+            </p>
+        </div>
+        
         <input type="file" id="csvFile" accept=".csv, .xls, .xlsx, .ods">
         <textarea id="lookupValues" placeholder="Enter lookup values, one per line"></textarea>
         <select id="returnColumn" multiple></select>
