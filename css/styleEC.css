@@ -54,6 +54,13 @@ h1 {
     animation: flame 1.5s infinite;
 }
 
+.positioned-link.left-align {
+    position: absolute;
+    bottom: 10px; /* Adjust as needed */
+    left: 0px; /* Align with the logo */
+    margin: 0;
+}
+
 input[type="file"],
 textarea,
 select,
