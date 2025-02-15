@@ -1,0 +1,81 @@
+body, html {
+    height: 100%;
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+.container {
+    display: flex;
+    height: 100%;
+}
+
+.sidebar {
+    width: 200px;
+    background-color: #000000;
+    padding: 15px;
+    box-shadow: 2px 0 5px rgba(0,0,0,0.1);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.sidebar .logo {
+    width: 100px; /* Adjusted from 100px to 80px */
+    height: 100px; /* Adjusted from 100px to 80px */
+    border-radius: 50%;
+    border: 4px solid rgb(6, 244, 6);
+    animation: flame 1s infinite;
+    background-color: #000000;
+}
+
+@keyframes flame {
+    0% {
+        border-color: rgb(255, 69, 0);
+        box-shadow: 0 0 20px 10px rgba(255, 69, 0, 0.5);
+    }
+    50% {
+        border-color: rgb(255, 140, 0);
+        box-shadow: 0 0 30px 15px rgba(255, 140, 0, 0.5);
+    }
+    100% {
+        border-color: rgb(255, 69, 0);
+        box-shadow: 0 0 20px 10px rgba(255, 69, 0, 0.5);
+    }
+}
+
+.sidebar .menu {
+    display: flex;
+    flex-direction: column;
+    background-color: #000000;
+    align-items: center;
+    width: 100%;
+    flex-grow: 1;
+    justify-content: center;
+    margin-top: 20%; /* Added to lower the menu top by 20% */
+}
+
+.sidebar button {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    background-color: #000000;
+    color: white;
+    border: 2px solid #f4f4f4;
+    cursor: pointer;
+    text-align: center; /* Center the text */
+}
+
+.sidebar button:hover {
+    background-color: #0056b3;
+}
+
+.content {
+    flex-grow: 1;
+    padding: 20px;
+    overflow-y: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Center the video horizontally */
+    justify-content: center; /* Center the video vertically */
+}

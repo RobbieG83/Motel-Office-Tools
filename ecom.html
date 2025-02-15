@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSV Lookup App</title>
+    <link rel="stylesheet" href="styleEC.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <img src="C:\Users\Rob Gill\Desktop\lookup 2.0\Motel Logo.png" alt="Logo" class="logo flame-effect">
+    
+    <!-- New link added outside the main container -->
+    <p class="positioned-link">
+        <a href="https://4093875.app.netsuite.com/app/common/search/searchresults.nl?searchid=3435&whence=" target="_blank" class="external-link">3PL Id Search (NetSuite)</a>
+    </p>
+    
+    <div class="container">
+        <h1>Item Id's By Zcode</h1>
+        <input type="file" id="csvFile" accept=".csv, .xls, .xlsx, .ods">
+        <textarea id="lookupValues" placeholder="Enter lookup values, one per line"></textarea>
+        <select id="returnColumn" multiple></select>
+        <button id="lookupButton">Lookup and Download</button>
+        <a id="downloadLink" style="display:none;"></a>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
