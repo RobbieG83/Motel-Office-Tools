@@ -49,6 +49,7 @@ body, html {
     flex-grow: 1;
     justify-content: center;
     margin-top: 40%; /* Added to lower the menu top by 20% */
+    margin-bottom: 0%;
 }
 
 .sidebar button {
