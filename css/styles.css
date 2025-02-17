@@ -66,62 +66,47 @@ body, html {
     text-align: center; /* Center the text */
 }
 
-.sidebar .btn-1 {
+.sidebar .btn-1, .sidebar .btn-2 {
     position: relative;
-    color: #FF10F0;
-    border: 2px solid #FF10F0;
+    color: #FF10F0; /* Default color for btn-1 */
+    border: 2px solid #FF10F0; /* Default border color for btn-1 */
     background-color: transparent;
-    background-image: linear-gradient(to right, #FF10F0 0%, #FF10F0 100%);
+    background-image: linear-gradient(to right, #FF10F0 0%, #FF10F0 100%); /* Default gradient for btn-1 */
     background-repeat: no-repeat;
     background-size: 0% 100%;
     transition: color 0.3s;
     z-index: 1; /* Ensure the button text is on top */
-}
-
-.sidebar .btn-1::before {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 0;
-    height: 100%;
-    background-color: #FF10F0;
-    transition: width 0.5s;
-    z-index: -1; /* Ensure the loading bar is behind the text */
 }
 
 .sidebar .btn-2 {
-    position: relative;
-    color: #fc0000;
-    border: 2px solid #fc0000;
-    background-color: transparent;
-    background-image: linear-gradient(to right, #fc0000 0%, #fc0000 100%);
-    background-repeat: no-repeat;
-    background-size: 0% 100%;
-    transition: color 0.3s;
-    z-index: 1; /* Ensure the button text is on top */
+    color: #fc0000; /* Override color for btn-2 */
+    border: 2px solid #fc0000; /* Override border color for btn-2 */
+    background-image: linear-gradient(to right, #fc0000 0%, #fc0000 100%); /* Override gradient for btn-2 */
 }
 
-.sidebar .btn-2::before {
+.sidebar .btn-1::before, .sidebar .btn-2::before {
     content: '';
     position: absolute;
     top: 0;
     left: 0;
     width: 0;
     height: 100%;
-    background-color: #fc0000;
+    background-color: #FF10F0; /* Default background color for btn-1 */
     transition: width 0.5s;
     z-index: -1; /* Ensure the loading bar is behind the text */
 }
 
-.sidebar .btn-1:hover,.sidebar .btn-2:hover {
+.sidebar .btn-2::before {
+    background-color: #fc0000; /* Override background color for btn-2 */
+}
+
+.sidebar .btn-1:hover, .sidebar .btn-2:hover {
     color: #fff;
     background-size: 50% 100%;
     animation: loadingBar 0.5s forwards;
 }
 
-
-.sidebar .btn-1:hover::before {
+.sidebar .btn-1:hover::before, .sidebar .btn-2:hover::before {
     width: 50%;
 }
 
