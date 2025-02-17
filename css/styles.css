@@ -107,7 +107,7 @@ body, html {
 }
 
 .sidebar .btn-3::before {
-    background-color: #fff200; /* Override background color for btn-2 */
+    background-color: #fff200; /* Override background color for btn-3 */
 }
 
 .sidebar .btn-1:hover, .sidebar .btn-2:hover, .sidebar .btn-3:hover {
