@@ -1,0 +1,79 @@
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: black;
+}
+
+.header-text {
+    text-align: center;
+    color: rgb(69, 68, 68);
+    margin: 0;
+}
+.logo {
+    width: 85px; /* Adjust the width as needed */
+    height: auto;
+}
+
+.video-box {
+    border: 2px solid #ffffff;
+    padding: 10px;
+    background: linear-gradient(to right, #f30606, #575757);
+    border-radius: 5px;
+    text-align: center;
+    color: white;
+}
+
+.video-box iframe {
+    width: 100%;
+    height: 200px;
+}
+
+.video-box p {
+    margin-top: 10px;
+}
+
+.ticker-tape {
+    background-color: #f5f5dc; /* Cream background */
+    overflow: hidden;
+    white-space: nowrap;
+    position: relative;
+    height: 50px; /* Adjust height as needed */
+    display: flex;
+    align-items: center;
+}
+.ticker-tape h1 {
+    display: inline-block;
+    padding-left: 100%; /* Start off-screen */
+    animation: ticker 20s linear infinite;
+    font-size: 1.5em; /* Adjust font size as needed */
+}
+.ticker-tape img {
+    vertical-align: middle;
+    width: 225px; /* Set the desired width */
+    height: auto; /* Maintain aspect ratio */
+}
+@keyframes ticker {
+    0% {
+        transform: translateX(0);
+    }
+    100% {
+        transform: translateX(-100%);
+    }
+}
+
+.video-section-1, .video-section-2, .video-section-3 {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    padding: 20px;
+    margin-top: 30px; /* Create space between the ticker and the video section */
+    border: #ffffff 2px solid;
+    border-radius: 5px;
+    background: #454545;
+}
+
+.video-section-1 h2, .video-section-2 h3, .video-section-3 h4 {
+    grid-column: span 3; /* Make the header span across all columns */
+    text-align: center;
+    color: white;
+    margin-bottom: 20px;
+}
