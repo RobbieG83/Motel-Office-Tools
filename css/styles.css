@@ -66,7 +66,7 @@ body, html {
     text-align: center; /* Center the text */
 }
 
-.sidebar .btn-1, .sidebar .btn-2 {
+.sidebar .btn-1, .sidebar .btn-2, .sidebar .btn-3 {
     position: relative;
     color: #FF10F0; /* Default color for btn-1 */
     border: 2px solid #FF10F0; /* Default border color for btn-1 */
@@ -84,7 +84,13 @@ body, html {
     background-image: linear-gradient(to right, #fc0000 0%, #fc0000 100%); /* Override gradient for btn-2 */
 }
 
-.sidebar .btn-1::before, .sidebar .btn-2::before {
+.sidebar .btn-3 {
+    color: #fff200; /* Override color for btn-3 */
+    border: 2px solid #fff200; /* Override border color for btn-3 */
+    background-image: linear-gradient(to right, #fff200 0%, #fff200 100%); /* Override gradient for btn-3 */
+}
+
+.sidebar .btn-1::before, .sidebar .btn-2::before, .sidebar .btn-3::before {
     content: '';
     position: absolute;
     top: 0;
@@ -100,13 +106,17 @@ body, html {
     background-color: #fc0000; /* Override background color for btn-2 */
 }
 
-.sidebar .btn-1:hover, .sidebar .btn-2:hover {
+.sidebar .btn-3::before {
+    background-color: #fff200; /* Override background color for btn-2 */
+}
+
+.sidebar .btn-1:hover, .sidebar .btn-2:hover, .sidebar .btn-3:hover {
     color: #fff;
     background-size: 50% 100%;
     animation: loadingBar 0.5s forwards;
 }
 
-.sidebar .btn-1:hover::before, .sidebar .btn-2:hover::before {
+.sidebar .btn-1:hover::before, .sidebar .btn-2:hover::before, .sidebar .btn-3:hover::before {
     width: 50%;
 }
 
